@@ -1,0 +1,24 @@
+{
+  "name": "emoji-intensifies",
+  "version": "0.0.0",
+  "description": "...",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ehgoodenough"
+  },
+  "scripts": {
+    "start": "codeglue --stage=development --mode=server"
+  },
+  "dependencies": {
+    "keyb": "^1.1.0",
+    "preact": "^8.2.7",
+    "statgrab": "^1.2.0",
+    "yaafloop": "^1.1.0"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.6.1",
+    "codeglue": "^1.6.4"
+  }
+}
