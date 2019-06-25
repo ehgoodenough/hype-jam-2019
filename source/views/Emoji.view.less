@@ -10,39 +10,46 @@
 
 .Frame {
     overflow: hidden;
-    
+
     font-family: comfortaa;
 
     background-color: #EEEEEE;
+    // background-color: #272727; // raisin black
+    // background-color: #31263E; // dark purple
+    // background-color: #B37BA4; // opera mauve pink
+    // background-color: #D99AC5; // ligh medium orchid pink
+    // background-color: #1E3F20; // cal poly pomona green
+    // background-color: #EE5622; // flame red
+    // background-color: #44355B; // pineapple purple
+    // background-color: #009FB7; // bondi blue
+    // background-color: #DD7373; // pink
     background-color: #AD343E; // sweet brown red
-    background-color: #272727; // raisin black
-    background-color: #44355B; // pineapple purple
-    background-color: #31263E; // dark purple
-    background-color: #009FB7; // bondi blue
-    background-color: #B37BA4; // opera mauve pink
-    background-color: #D99AC5; // ligh medium orchid pink
-    background-color: #1E3F20; // cal poly pomona green
-    background-color: #EE5622; // flame red
+
+    background-image: url("../images/background.png");
 }
 
 .Title {
     top: 0em;
     left: 0em;
-    width: 50%;
     bottom: 0em;
+    width: 100%;
     position: absolute;
 
     text-align: center;
     line-height: 3em;
     color: #EEEEEE;
     font-weight: bold;
+
+    img {
+        height: 4.5em;
+    }
 }
 
 .Emojis {
-    top: 0em;
+    left: 0em;
     right: 0em;
-    bottom: 0em;
-    width: 50%;
+    bottom: -0.2em;
+    white-space: nowrap;
     line-height: 0.7em;
     position: absolute;
     text-align: right;

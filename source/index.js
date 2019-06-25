@@ -25,7 +25,7 @@ class View {
                 <title>Hype Jam</title>
                 <Frame>
                     <div class="Title">
-                        Hype Jam
+                        <img src={require("images/wreath.png")}/>
                     </div>
                     <div class="Emojis">
                         {images.map((image) => (
@@ -61,6 +61,7 @@ class Emoji {
             // "top": this.props.emoji.y + "em",
             // "left": this.props.emoji.x + "em",
             "background-image": "url(" + this.props.image + ")",
+            "transform": "rotate(" + (Math.random() * 30 - 15) + "deg)",
             "margin-top": (Math.random() * JITTER) - (JITTER / 2) + "em",
             "margin-left": (Math.random() * JITTER) - (JITTER / 2) + "em",
         }
