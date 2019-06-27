@@ -8,10 +8,30 @@
     src: url("../fonts/comfortaa.ttf") format("truetype"),
 }
 
+html, body, .View {
+    height: 100%;
+}
+
 .Frame {
+    margin: auto;
+    min-height: 100%;
+    max-width: 1000px;
+
     overflow: hidden;
 
+    display: flex;
+    flex-direction: column;
+
     font-family: comfortaa;
+}
+
+header {
+    width: 100%;
+    height: 5em;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    position: relative;
+    overflow: hidden;
 
     background-color: #EEEEEE;
     // background-color: #272727; // raisin black
@@ -26,45 +46,63 @@
     background-color: #AD343E; // sweet brown red
 
     background-image: url("../images/background.png");
-}
 
-.Title {
-    top: 0em;
-    left: 0em;
-    bottom: 0em;
-    width: 100%;
-    position: absolute;
+    .Title {
+        top: 0em;
+        left: 0em;
+        bottom: 0em;
+        width: 100%;
+        position: absolute;
 
-    text-align: center;
-    line-height: 3em;
-    color: #EEEEEE;
-    font-weight: bold;
+        text-align: center;
+        line-height: 3em;
+        color: #EEEEEE;
+        font-weight: bold;
 
-    img {
-        height: 4.5em;
-    }
-}
-
-.Emojis {
-    left: 0em;
-    right: 0em;
-    bottom: -0.2em;
-    white-space: nowrap;
-    line-height: 0.7em;
-    position: absolute;
-    text-align: right;
-
-    .Emoji {
-        width: 1em;
-        height: 1em;
-        display: inline-block;
-
-        .Image {
-            width: 1em;
-            height: 1em;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
+        img {
+            height: 4.5em;
         }
     }
+
+    .Emojis {
+        left: 0em;
+        right: 0em;
+        bottom: -0.2em;
+        white-space: nowrap;
+        line-height: 0.7em;
+        position: absolute;
+        text-align: right;
+
+        .Emoji {
+            width: 1em;
+            height: 1em;
+            display: inline-block;
+
+            .Image {
+                width: 1em;
+                height: 1em;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+}
+
+footer {
+    height: 3rem;
+    background-color: #EEE;
+    background-position: left;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-image: url("../images/peakblob.png");
+
+    .Text {
+        line-height: 3rem;
+        text-align: center;
+    }
+}
+
+.Flex {
+    flex: 1;
 }

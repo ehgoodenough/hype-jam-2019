@@ -2,7 +2,6 @@ import Preact from "preact"
 import Yaafloop from "yaafloop"
 
 import "views/Emoji.view.less"
-import "views/Frame.view.less"
 
 require("statgrab/do")
 
@@ -24,14 +23,24 @@ class View {
             <div class="View">
                 <title>Hype Jam</title>
                 <Frame>
-                    <div class="Title">
-                        <img src={require("images/wreath.png")}/>
-                    </div>
-                    <div class="Emojis">
-                        {images.map((image) => (
-                            <Emoji image={image}/>
-                        ))}
-                    </div>
+                    <header>
+                        <div class="Title">
+                            <img src={require("images/wreath.png")}/>
+                        </div>
+                        <div class="Emojis">
+                            {images.map((image) => (
+                                <Emoji image={image}/>
+                            ))}
+                        </div>
+                    </header>
+                    asdasdasd
+                    <div class="Flex"/>
+                    <footer>
+                        <div class="Text">
+                            So excited to see you at Hype Jam!!
+                            <i class="fab fa-twitter"/>
+                        </div>
+                    </footer>
                 </Frame>
             </div>
         )
